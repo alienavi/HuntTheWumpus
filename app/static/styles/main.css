@@ -1,0 +1,123 @@
+body{
+    background-color: navajowhite;
+    align-items: center;
+    text-align: center;
+    color: maroon;
+}
+.header{
+    font-size: xx-large;
+    margin: 20px;
+}
+.title{
+    color: maroon;
+}
+.bottom{
+    margin-bottom: -100px;
+}
+.info{
+    background: maroon;
+    color: wheat;
+    margin: 4rem 5rem;
+    padding: 10px 80px;
+}
+.size_input{
+    padding: 15px 0px;
+    font-size: large;
+    text-align: center;
+    color: maroon;
+    font-style: oblique;
+    border-radius: 5px;
+    border-top: none;
+    border-left: none;
+    border-bottom: 2px solid maroon;
+    border-right: 2px solid maroon;
+}
+.play{
+    font-size: large;
+    margin: 20px;
+    padding: 10px;
+    color: wheat;
+    text-align: center;
+    background: maroon;
+    border-top: none;
+    border-left: none;
+    border-bottom: 2px solid darkgray;
+    border-right: 2px solid darkgray;
+    border-radius: 5px;
+}
+.play:hover{
+    color: maroon;
+    background: goldenrod;
+    border-bottom: 2px solid maroon;
+    border-right: 2px solid maroon;
+}
+.main{
+    padding: 0px 20rem;
+}
+.room{
+    border: 1px dashed maroon;
+    height: 4rem;
+    width: 4rem;
+    display: inline-block;
+}
+.curr_room{
+    border: 2px solid maroon;
+}
+.controls{
+    color: wheat;
+    height: fit-content;
+    vertical-align: middle;
+    text-align: center;
+    align-items: center;
+    display: inline-flex;
+    width: fit-content;
+}
+.left,.right,.up,.down{
+    background-color: maroon;
+    border-top: none;
+    border-left: none;
+    border-bottom: 2px solid darkgray;
+    border-right: 2px solid darkgray;
+    border-radius: 5px;
+    margin: 10px;
+    width: 5rem;
+}
+.left:hover,.right:hover,.up:hover,.down:hover{
+    color: maroon;
+    background: goldenrod;
+    border-bottom: 2px solid maroon;
+    border-right: 2px solid maroon;
+}
+.room .feather{
+    padding: 1rem;
+    display: block;
+}
+#hider{
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    width:100vw;
+    height:100vh;
+    /*
+    z- index must be lower than pop up box
+    */
+    z-index: 99;
+    background-color:Black;
+    opacity:0.6;
+}
+.win, .lose{
+    z-index: 100;
+    position: absolute;
+    /* border: 1px solid maroon; */
+    /* margin-right: 20rem; */
+    left: 45%;
+    /* top: 50%; */
+    bottom: 50%;
+    background: wheat;
+    /* display: inline-flex; */
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    border-bottom: 3px solid maroon;
+    border-right: 3px solid maroon;
+}
